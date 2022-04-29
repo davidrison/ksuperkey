@@ -11,7 +11,7 @@ LDFLAGS += -pthread
 all: $(TARGET)
 
 $(TARGET): xcape.c
-	$(CC) $(CFLAGS) -o $@ $< $(LDFLAGS)
+	$(CC) $(CFLAGS) -o $@ xcape.c $(LDFLAGS)
 
 install:
 	$(INSTALL) -d -m 0755 $(DESTDIR)$(PREFIX)/bin
